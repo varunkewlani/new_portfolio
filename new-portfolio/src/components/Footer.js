@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
 import {
   AiFillGithub,
   AiOutlineTwitter,
@@ -7,16 +7,11 @@ import {
   AiOutlineMail,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
-import { Button } from "react-bootstrap";
 
 function Footer() {
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
-
-  const handleSubscribe = () => {
-    alert("Subscribed successfully!");
   };
 
   let date = new Date();
@@ -82,7 +77,6 @@ function Footer() {
             >
               <AiOutlineMail /> Email Varun
             </Button>
-            
           </div>
         </Col>
       </Row>
