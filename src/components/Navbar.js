@@ -11,8 +11,8 @@ import {
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
 } from "react-icons/ai";
-
 import { CgFileDocument } from "react-icons/cg";
+import { MdWork } from "react-icons/md"; // Import work icon
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -89,7 +89,17 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
 
-            
+            {/* Add Work Experience link */}
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/work-experience" // Path for the Work Experience section
+                onClick={() => updateExpanded(false)}
+              >
+                <MdWork style={{ marginBottom: "2px" }} /> Work Experience
+              </Nav.Link>
+            </Nav.Item>
+
             <Nav.Item className="fork-btn">
               <Button
                 href="https://github.com/varunkewlani/Portfolio-master"

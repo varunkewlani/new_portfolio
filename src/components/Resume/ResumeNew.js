@@ -3,8 +3,8 @@ import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
 import { AiOutlineDownload } from "react-icons/ai";
-import newPdf from "../../Assets/newResume.pdf";
-
+//import newPdf from "../../Assets/newResume.pdf";
+import neww from "..//../Assets/neww.pdf"
 function ResumeNew() {
   return (
     <Container fluid className="resume-section">
@@ -12,12 +12,12 @@ function ResumeNew() {
       <Row style={{ justifyContent: "center", position: "relative" }}>
         <Button
           variant="primary"
-          href={newPdf}
+          href={neww}
           target="_blank"
           style={{ maxWidth: "250px" }}
         >
           <AiOutlineDownload />
-          &nbsp;View CV in new Page
+          &nbsp;View CV in new Page 
         </Button>
       </Row>
     </Container>

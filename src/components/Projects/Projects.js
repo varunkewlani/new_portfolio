@@ -4,7 +4,8 @@ import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import food from "../../Assets/Projects/food.png";
 import travel from "../../Assets/Projects/travel.png";
-import swiggy from "../../Assets/Projects/swiggy.jpeg"; // Add this line
+import swiggy from "../../Assets/Projects/swiggy.jpeg"; // Swiggy image
+import instashop from "../../Assets/Projects/instashop.png"; // Add this line for Instashop image
 
 function Projects() {
   return (
@@ -41,7 +42,7 @@ function Projects() {
             />
           </Col>
           
-          <Col md={4} className="project-card"> {/* Add this block */}
+          <Col md={4} className="project-card">
             <ProjectCard
               imgPath={swiggy}
               isBlog={false}
@@ -49,6 +50,17 @@ function Projects() {
               description="A clone of Swiggy, a popular food delivery platform, showcasing similar functionality and design."
               ghLink="https://github.com/varunkewlani/new_portfolio"
               demoLink="https://varunkewlani.github.io/new_portfolio/"
+            />
+          </Col>
+
+          <Col md={4} className="project-card"> {/* Add this block for Instashop */}
+            <ProjectCard
+              imgPath={instashop}
+              isBlog={false}
+              title="Instashop"
+              description="Instashop is a shopping UI website featuring a Home page, Shop section, Categories filter, and Login functionality. It provides a responsive and user-friendly interface for an enhanced e-commerce experience."
+              ghLink="https://github.com/varunkewlani/Insta_shop"
+              demoLink="https://varunkewlani.github.io/Insta_shop/"
             />
           </Col>
 
